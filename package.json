@@ -1,0 +1,27 @@
+{
+  "name": "servidorsocket",
+  "version": "1.0.0",
+  "description": "node test",
+  "main": "node index.js",
+  "dependencies": {
+    "express": "*",
+    "socket.io": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Diego",
+    "Quispe"
+  ],
+  "engines":{
+    "node": "5.*"
+  },
+  "author": "Diego JD",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "servidor node"
+  }
+}
