@@ -12,7 +12,7 @@ io.sockets.on("connection", function(socket) {
 	console.log("Se haconectado un nuevo cliente al puerto 3000");
 });*/
 
-/**************/
+/*******  RESTABLECER GAME HITZAK  *******/
 var app = require('express')();
 var server = require('http').createServer(app);
 var io = require('socket.io').listen(server, { log: false });
@@ -22,7 +22,7 @@ app.get('/', function(req, res){
     res.sendfile(__dirname + '/public/cliente.html');
 });
 io.sockets.on('connection', function(socket){
-    socket.on('actualizarEstrellas', function(datos){
+    /*socket.on('actualizarEstrellas', function(datos){
         io.emit('actualizarEstrellas',datos);
     });
     socket.on('marcar', function(datos){
@@ -54,5 +54,5 @@ io.sockets.on('connection', function(socket){
     });
     socket.on("turnoPorFinDeTiempo",function(datos){
         io.emit("turnoPorFinDeTiempo",datos);
-    });
+    });*/
 });
